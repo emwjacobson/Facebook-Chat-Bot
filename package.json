@@ -1,0 +1,22 @@
+{
+  "name": "fbot",
+  "version": "1.0.0",
+  "description": "A facebook chat bot.",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Emerson Jacobson",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "@types/minimist": "^1.2.0",
+    "@types/node": "^8.5.2",
+    "@types/request": "^2.0.9",
+    "facebook-chat-api": "git+https://github.com/Schmavery/facebook-chat-api.git",
+    "minimist": "^1.2.0",
+    "request": "^2.83.0",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
+  }
+}
