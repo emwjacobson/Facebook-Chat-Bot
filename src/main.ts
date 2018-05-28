@@ -1,5 +1,5 @@
 import { ChatBot } from './ChatBot';
-import * as minimist from "minimist";
+import * as minimist from 'minimist';
 
 function main() {
     let argv = minimist(process.argv.slice(2));

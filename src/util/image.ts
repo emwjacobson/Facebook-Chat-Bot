@@ -1,7 +1,7 @@
 import * as req from 'request';
 import * as fs from 'fs';
 
-let path: string = "./img/";
+let path: string = "./dist/img/";
 
 if(!fs.existsSync(path)) {
     fs.mkdirSync(path);

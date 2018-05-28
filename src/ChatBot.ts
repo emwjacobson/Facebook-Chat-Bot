@@ -21,6 +21,7 @@ export class ChatBot {
             if (err) {
                 console.error(err);
                 this.isLoggedIn = false;
+                return;
             }
             this.isLoggedIn = true;
             this.api = api;
@@ -33,20 +34,20 @@ export class ChatBot {
     private register_commands(): void {
         // ADD COMMANDS HERE
         // DONT FORGET TO IMPORT AND ADD COMMAND TO ./commands/index.ts
-        let help = new Help();
-        let hello_world = new HelloWorld();
-
-        this.commands.push(help, hello_world);
+        this.commands.push(
+            new Help(),
+            new HelloWorld()
+        );
     }
 
     private register_actions(): void {
         // ADD ACTIONS HERE
         // DONT FORGET TO IMPORT AND ADD ACTIONS TO ./actions/index.ts
-        let reactions = new Reactions();
-        let eightball = new EightBall();
-        let filesaver = new FileSaver();
-
-        this.actions.push(reactions, eightball, filesaver);
+        this.actions.push(
+            new Reactions(),
+            new EightBall(),
+            new FileSaver()
+        );
     }
 
     private register(): void {
@@ -65,7 +66,6 @@ export class ChatBot {
                         cmd.call(context, message);
                     }
                 }
-
                 // For normal messages
                 else {
                     for (let action of context.actions) {

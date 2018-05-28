@@ -1,10 +1,10 @@
 import { ChatBot } from '../ChatBot';
 
-let admins: string[] = ['100001404053579'];
+let admins: string[] = [
+    // Insert FB ids of admins here.
+    '100001404053579'
+];
 
 export function isAdmin(user: string): boolean {
-    if(admins.indexOf(user) >= 0){
-        return true;
-    }
-    return false;
+    return admins.indexOf(user) >= 0;
 }
