@@ -14,7 +14,6 @@ export class Lookup extends Command {
         if(this.command_name == message.body.split(" ")[0]){
             const args: RegExpMatchArray | null = (<String>message.body).match(/\"(.*?)\" \"(.*?)\" (.*?)$/);
 
-            console.log(args);
             if (!args || !(args[1] && args[2] && args[3])) {
                 context.api.sendMessage("Usage: !lookup \"Person Name\" \"Message to lookup\" <limit #>" , message.threadID);
                 return;
@@ -37,6 +36,7 @@ export class Lookup extends Command {
 
                 if (msgs_by_user.length === 0) {
                     context.api.sendMessage("", message.threadID);
+                    return;
                 }
 
                 let final_message: string = "";
