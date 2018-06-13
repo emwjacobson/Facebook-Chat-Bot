@@ -1,5 +1,7 @@
 {
-  "how_to_use": "If you want to use this functionality, you need to download your information from facebook in JSON format and copy the messages you want into messages.json, it should look something like this file, without this line.",
+  "how_to_use": "If you want to use this functionality, you need to download your information from facebook in JSON format and copy the messages you want into messages.json, it should look something like this file.",
+  "how_to_use2": "Dont forget to add yourself to the participants list, as facebook doesnt add yourself to the members list.",
+  
   "messages": [
     {
       "sender_name": "Some Person",
