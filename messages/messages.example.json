@@ -1,0 +1,21 @@
+{
+  "how_to_use": "If you want to use this functionality, you need to download your information from facebook in JSON format and copy the messages you want into messages.json, it should look something like this file, without this line.",
+  "messages": [
+    {
+      "sender_name": "Some Person",
+      "timestamp": 1480215813,
+      "content": "This is the message.",
+      "type": "Generic"
+    }
+  ],
+  "title": "Title of group chat.",
+  "is_still_participant": true,
+  "status": "Pending",
+  "thread_type": "Regular",
+  "participants": [
+    "Participant 1",
+    "Participant 2",
+    "Participant 3"
+  ],
+  "thread_path": "some_path"
+}

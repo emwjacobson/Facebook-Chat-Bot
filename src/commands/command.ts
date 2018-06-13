@@ -4,7 +4,7 @@ export class Command {
     public command_name: string;
     public hidden: boolean;
 
-    constructor(command_name: string, hidden: boolean = false, ...args: string[]) {
+    constructor(command_name: string, hidden: boolean = false) {
         this.command_name = command_name;
         this.hidden = hidden;
     }

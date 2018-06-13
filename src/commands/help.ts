@@ -14,6 +14,7 @@ export class Help extends Command {
                     help_msg += cmd.getHelp(context) + "\n";
                 }
             }
+            help_msg += "\nActions:\n"
             for(let act of context.actions){
                 if(!act.hidden){
                     help_msg += act.getHelp(context) + "\n";
@@ -24,6 +25,6 @@ export class Help extends Command {
     }
 
     public getHelp(context: ChatBot): (string | void) {
-        return context.command_indicator+this.command_name+" - Displays this menu.";
+        return context.command_indicator+this.command_name+":\n\t Displays this menu.";
     }
 }

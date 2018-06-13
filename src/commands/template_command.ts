@@ -13,6 +13,6 @@ export class TemplateCommand extends Command {
     }
 
     public getHelp(context: ChatBot): (string | void) {
-        return context.command_indicator+this.command_name+" - no help set."
+        return context.command_indicator+this.command_name+":\n\t no help set."
     }
 }

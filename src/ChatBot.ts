@@ -1,5 +1,5 @@
 import * as fb from 'facebook-chat-api';
-import { Command, HelloWorld, Help } from './commands';
+import { Command, HelloWorld, Help, Lookup } from './commands';
 import { Action, Reactions, EightBall, FileSaver } from './actions';
 
 export class ChatBot {
@@ -36,7 +36,8 @@ export class ChatBot {
         // DONT FORGET TO IMPORT AND ADD COMMAND TO ./commands/index.ts
         this.commands.push(
             new Help(),
-            new HelloWorld()
+            new HelloWorld(),
+            new Lookup()
         );
     }
 
