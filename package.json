@@ -11,13 +11,13 @@
   "devDependencies": {},
   "dependencies": {
     "@types/minimist": "^1.2.0",
-    "@types/node": "^8.10.17",
+    "@types/node": "^8.10.20",
     "@types/request": "^2.47.0",
     "facebook-chat-api": "git+https://github.com/Schmavery/facebook-chat-api.git",
     "minimist": "^1.2.0",
     "moment": "^2.22.2",
     "request": "^2.87.0",
     "tslint": "^5.10.0",
-    "typescript": "^2.8.3"
+    "typescript": "^2.9.2"
   }
 }
